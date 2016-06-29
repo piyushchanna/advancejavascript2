@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>Advaned Javascript</title>
+	<script type="text/javascript">
+		function Car(make,model,year)
+		{
+			this.make=make;
+			this.model=model;
+			this.year=year;
+		}
+		(function (){
+						var ferrari=new Car('Ferrari','Dino',1970);
+						var gallardo=new Car('Lamborgini','Gallardo',2005);
+						alert("Question 1 solution:")
+						alert("Car1 name:"+ferrari.make);
+						alert("Car1 model:"+ferrari.model);
+						alert("Car1 year:"+ferrari.year);
+						alert("Car2 name:"+gallardo.make);
+						alert("Car2 model:"+gallardo.model);
+						alert("Car2 year:"+gallardo.year);
+		})();
+		(function(){
+						var b=1673;
+						var a=1735;
+						function addition(a,b)
+						{
+							this.add=a+b;
+							return add;
+						}
+						function subtract(a,b)
+						{
+							this.sub=a-b;
+							return sub;
+						}
+						function multiply(a,b)
+						{
+							this.mul=a*b;
+							return mul;
+						}
+						function divide(a,b)
+						{
+							this.div=a/b;
+							return div;
+						}
+						alert("Question 2 solution:")
+						alert("Addition:"+addition(a,b));
+						alert("Subtraction:"+subtract(a,b));
+						alert("Multiplication:"+multiply(a,b));
+						alert("Division:"+divide(a,b));
+		})();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

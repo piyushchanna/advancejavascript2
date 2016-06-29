@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>Advanced Javascript 2</title>
+	<script type="text/javascript">
+		(function(){
+					function vehicle(wheel)
+					{
+						this.wheel=wheel;
+					}
+					var two_wheeler=new vehicle(2);
+					var four_wheeler=new vehicle(4);
+					var train=new vehicle(14);
+					var truck=new vehicle(6);
+					var tractor=new vehicle(8);
+					function Scooter(color, model)
+					{
+						this.color=color;
+						this.model=model;
+					}
+					Scooter.prototype=two_wheeler;
+					var bajaj=new Scooter('black','chetak','bajaj');
+					console.log(bajaj.wheel);
+					function MotorCycle(color, model)
+					{
+						this.color=color;
+						this.model=model;
+					}
+					MotorCycle.prototype=two_wheeler;
+					var discover=new MotorCycle('res','r120','bajaj');
+					console.log(discover);
+					function Car(color, maker)
+					{
+						this.color=color;
+						this.maker=maker;
+					}
+					function Bus(color, maker)
+					{
+						this.color=color;
+						this.maker=maker;
+					}
+					Car.prototype=four_wheeler;
+					Bus.prototype=four_wheeler;
+					var gallardo=new Car('orange','lamborgini','gallardo');
+					console.log(gallardo);
+					var volvo=new Bus('white','Volvo 1.1','Volvo');
+					console.log(volvo);
+		})();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
